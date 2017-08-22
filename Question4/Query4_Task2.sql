@@ -1,0 +1,1 @@
+SELECT DISTINCT h.BankName FROM HASACCOUNTS h, ROBBERS r WHERE h.RobberId=r.RobberId AND r.Nickname='Calamity Jane';

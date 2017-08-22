@@ -1,0 +1,1 @@
+SELECT Security, AVG(Amount) AS Amount, COUNT(Security) AS NoOfRobberies FROM(SELECT BankName, City, Amount, Security FROM Robberies NATURAL JOIN Banks) AS RobberiesPerSecurity GROUP BY Security;

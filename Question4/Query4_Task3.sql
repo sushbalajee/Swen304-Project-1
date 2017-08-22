@@ -1,0 +1,1 @@
+SELECT BankName, City FROM BANKS WHERE City!='Chicago' ORDER BY NoAccounts;

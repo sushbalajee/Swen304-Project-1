@@ -1,0 +1,1 @@
+SELECT a.RobberId, r.Nickname, SUM(a.Share) AS Earnings FROM ACCOMPLICES a, ROBBERS r WHERE r.RobberId=a.RobberId GROUP BY a.RobberId, r.Nickname HAVING SUM(a.Share)>30000 ORDER BY sum(a.Share) DESC;
